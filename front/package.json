@@ -1,0 +1,50 @@
+{
+  "name": "front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:dev": "env-cmd -f .env.test webpack --mode development",
+    "build:prod": "env-cmd -f .env webpack --mode production",
+    "local": "env-cmd -f .env.test webpack serve --mode development --open",
+    "start": "env-cmd -f .env node dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.1.3",
+    "dotenv-webpack": "^7.0.2",
+    "express": "^4.17.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.3.9",
+    "node-polyfill-webpack-plugin": "^1.0.3",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "path-browserify": "^1.0.1",
+    "terser-webpack-plugin": "^5.1.1",
+    "webpack": "^5.27.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "env-cmd": "^10.1.0",
+    "jquery": "^3.6.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "redux-saga": "^1.1.3"
+  }
+}
